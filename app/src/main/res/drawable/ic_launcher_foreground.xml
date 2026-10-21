@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The mark alone, for the adaptive icon: a TV frame with a route leaving one node for another. The
+     frame is the device, the amber node is the app, the mint arrow is where its traffic goes. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Screen frame, drawn as a stroke so it stays a line at every size. -->
+    <path
+        android:pathData="M33,36 H75 A9,9 0 0 1 84,45 V65 A9,9 0 0 1 75,74 H33 A9,9 0 0 1 24,65 V45 A9,9 0 0 1 33,36 Z"
+        android:strokeColor="#58707C"
+        android:strokeWidth="5"
+        android:strokeLineJoin="round" />
+
+    <!-- The route: out of the app's node, up to the proxy. -->
+    <path
+        android:pathData="M38,63 C48,63 52,54 60,52"
+        android:strokeColor="#48D1C0"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+
+    <!-- Arrowhead, filled so it survives at 48dp. -->
+    <path
+        android:pathData="M70,44 L56,47 L64,57 Z"
+        android:fillColor="#48D1C0" />
+
+    <!-- The app itself. -->
+    <path
+        android:pathData="M38,57.5 A5.5,5.5 0 1 1 37.99,57.5 Z"
+        android:fillColor="#F2C14E" />
+</vector>

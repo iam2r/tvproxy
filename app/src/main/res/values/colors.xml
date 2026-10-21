@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The icon's ground: near-black slate, so the mint route and amber node read at a glance on a TV. -->
+    <color name="ic_launcher_background">#0E1A1F</color>
+</resources>

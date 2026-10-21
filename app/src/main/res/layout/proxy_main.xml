@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#101418">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TV 系统代理切换"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统代理: 读取中..."
+        android:textSize="20sp"
+        android:textColor="#FFD54F"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="代理: 127.0.0.1:7890 (电视本地 clash)"
+        android:textSize="14sp"
+        android:textColor="#90A4AE"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btn_proxy_on"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="开启系统代理"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_proxy_on_bg"
+        android:nextFocusDown="@id/btn_proxy_off"
+        android:nextFocusUp="@id/btn_reboot"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btn_proxy_off"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="关闭系统代理"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_proxy_off_bg"
+        android:nextFocusDown="@id/btn_reboot"
+        android:nextFocusUp="@id/btn_proxy_on"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btn_reboot"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="重启电视"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_reboot_bg"
+        android:nextFocusUp="@id/btn_proxy_off"
+        android:nextFocusDown="@id/log_scroll" />
+
+    <ScrollView
+        android:id="@+id/log_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="24dp"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/log_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="操作日志:"
+            android:textSize="13sp"
+            android:textColor="#B0BEC5"
+            android:fontFamily="monospace" />
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 关闭代理按钮三态: 红 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape><solid android:color="#8E0000" /><corners android:radius="6dp" /></shape>
+    </item>
+    <item android:state_focused="true">
+        <shape><solid android:color="#EF9A9A" /><corners android:radius="6dp" /></shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape><solid android:color="#8E0000" /><corners android:radius="6dp" /></shape>
+    </item>
+    <item>
+        <shape><solid android:color="#C62828" /><corners android:radius="6dp" /></shape>
+    </item>
+</selector>
